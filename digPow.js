@@ -1,8 +1,8 @@
 function digPow(n, p){    
-  total = n.toString().split("").reduce((sum, value) => {
-    return sum + Math.pow(parseInt(value,10),p++);
-  },0);
-  return !(total % n ) ? total/n : -1;
+	let total = n.toString().split("").reduce((sum, value) => {
+		return sum + Math.pow(parseInt(value,10),p++);
+	},0);
+	return !(total % n ) ? total/n : -1;
 }
 
 
